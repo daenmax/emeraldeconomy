@@ -1,0 +1,13 @@
+{
+  "itemGroup.emeraldeconomy": "Example Mod Tab",
+  "block.emeraldeconomy.example_block": "Example Block",
+  "item.emeraldeconomy.example_item": "Example Item",
+
+  "emeraldeconomy.configuration.title": "Emerald economy Configs",
+  "emeraldeconomy.configuration.section.emeraldeconomy.common.toml": "Emerald economy Configs",
+  "emeraldeconomy.configuration.section.emeraldeconomy.common.toml.title": "Emerald economy Configs",
+  "emeraldeconomy.configuration.items": "Item List",
+  "emeraldeconomy.configuration.logDirtBlock": "Log Dirt Block",
+  "emeraldeconomy.configuration.magicNumberIntroduction": "Magic Number Text",
+  "emeraldeconomy.configuration.magicNumber": "Magic Number"
+}
