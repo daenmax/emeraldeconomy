@@ -1,7 +1,9 @@
 {
-  "itemGroup.emeraldeconomy": "Example Mod Tab",
+  "itemGroup.emeraldeconomy": "Emerald Economy",
   "block.emeraldeconomy.example_block": "Example Block",
-  "item.emeraldeconomy.example_item": "Example Item",
+  "item.emeraldeconomy.item_noodles": "Noodles",
+  "item.emeraldeconomy.test_1": "Test 1",
+  "item.emeraldeconomy.test_2": "Test 2",
 
   "emeraldeconomy.configuration.title": "Emerald economy Configs",
   "emeraldeconomy.configuration.section.emeraldeconomy.common.toml": "Emerald economy Configs",
