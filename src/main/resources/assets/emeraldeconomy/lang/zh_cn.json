@@ -1,0 +1,13 @@
+{
+  "itemGroup.emeraldeconomy": "绿宝石经济",
+  "block.emeraldeconomy.example_block": "绿宝石经济示例方块",
+  "item.emeraldeconomy.example_item": "绿宝石经济示例物品",
+
+  "emeraldeconomy.configuration.title": "绿宝石经济配置",
+  "emeraldeconomy.configuration.section.emeraldeconomy.common.toml": "绿宝石经济配置",
+  "emeraldeconomy.configuration.section.emeraldeconomy.common.toml.title": "绿宝石经济配置",
+  "emeraldeconomy.configuration.items": "物品列表",
+  "emeraldeconomy.configuration.logDirtBlock": "记录日志",
+  "emeraldeconomy.configuration.magicNumberIntroduction": "神奇数字介绍",
+  "emeraldeconomy.configuration.magicNumber": "神奇数字"
+}

@@ -12,26 +12,26 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.config.ModConfigEvent;
 import net.neoforged.neoforge.common.ModConfigSpec;
 
-// An example config class. This is not required, but it's a good idea to have one to keep your config organized.
-// Demonstrates how to use Neo's config APIs
+// 一个示例配置类。这不是必需的，但为了使配置更有条理，建议设置一个。
+// 演示如何使用Neo的配置API
 public class Config {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
     public static final ModConfigSpec.BooleanValue LOG_DIRT_BLOCK = BUILDER
-            .comment("Whether to log the dirt block on common setup")
+            .comment("是否记录日志")
             .define("logDirtBlock", true);
 
     public static final ModConfigSpec.IntValue MAGIC_NUMBER = BUILDER
-            .comment("A magic number")
+            .comment("一个神奇数字")
             .defineInRange("magicNumber", 42, 0, Integer.MAX_VALUE);
 
     public static final ModConfigSpec.ConfigValue<String> MAGIC_NUMBER_INTRODUCTION = BUILDER
-            .comment("What you want the introduction message to be for the magic number")
-            .define("magicNumberIntroduction", "The magic number is... ");
+            .comment("你希望这个“神奇数字”的介绍信息是什么")
+            .define("magicNumberIntroduction", "这个神奇数字是...");
 
-    // a list of strings that are treated as resource locations for items
+    // 一个字符串列表，这些字符串被视为项目的资源位置
     public static final ModConfigSpec.ConfigValue<List<? extends String>> ITEM_STRINGS = BUILDER
-            .comment("A list of items to log on common setup.")
+            .comment("在公共设置时要记录的物品列表")
             .defineListAllowEmpty("items", List.of("minecraft:iron_ingot"), () -> "", Config::validateItemName);
 
     static final ModConfigSpec SPEC = BUILDER.build();
