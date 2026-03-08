@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "emeraldeconomy:block/ee_atm_block"
+    }
+  }
+}

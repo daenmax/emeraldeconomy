@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "emeraldeconomy:item/ee_atm_block_icon"
+	}
+}

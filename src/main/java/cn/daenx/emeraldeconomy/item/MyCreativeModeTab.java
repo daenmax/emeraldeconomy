@@ -1,10 +1,12 @@
 package cn.daenx.emeraldeconomy.item;
 
 import cn.daenx.emeraldeconomy.Emeraldeconomy;
+import cn.daenx.emeraldeconomy.block.MyBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -17,11 +19,11 @@ public class MyCreativeModeTab {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.emeraldeconomy"))
             .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> MyItems.ITEM_NOODLES.get().getDefaultInstance())
+            .icon(() -> Items.EMERALD.getDefaultInstance())
             // 将示例项添加到选项卡中。对于您自己的选项卡，此方法比事件更可取
             .displayItems((parameters, output) -> {
                 output.accept(MyItems.ITEM_NOODLES.get());
-                output.accept(MyItems.EXAMPLE_BLOCK_ITEM.get());
+                output.accept(MyBlocks.EE_ATM_BLOCK.get());
                 output.accept(MyItems.TEST_1.get());
                 output.accept(MyItems.TEST_2.get());
             }).build());

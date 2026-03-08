@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "emeraldeconomy:item/ee_atm_block"
+  }
+}

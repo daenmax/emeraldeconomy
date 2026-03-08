@@ -1,5 +1,6 @@
 package cn.daenx.emeraldeconomy;
 
+import cn.daenx.emeraldeconomy.block.MyBlocks;
 import cn.daenx.emeraldeconomy.item.MyCreativeModeTab;
 import cn.daenx.emeraldeconomy.item.MyItems;
 import com.mojang.logging.LogUtils;
@@ -32,6 +33,8 @@ public class Emeraldeconomy {
 
         //注册物品
         MyItems.register(modEventBus);
+        //注册方块
+        MyBlocks.register(modEventBus);
 
         //注册创造模式标签页
         MyCreativeModeTab.register(modEventBus);
@@ -41,8 +44,6 @@ public class Emeraldeconomy {
         // 如果这个类中没有像下面的onServerStarting()那样带有@SubscribeEvent注解的函数，就不要添加这行代码。
         NeoForge.EVENT_BUS.register(this);
 
-//         将物品注册到创造模式标签页
-//        modEventBus.addListener(this::addCreative);
 
         // 注册我们模组的ModConfigSpec，以便FML可以为我们创建和加载配置文件
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -61,12 +62,7 @@ public class Emeraldeconomy {
         Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
     }
 
-    // 将示例方块物品添加到建筑方块标签页
-//    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-//        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-//            event.accept(MyItems.EXAMPLE_BLOCK_ITEM);
-//        }
-//    }
+
 
     // 你可以使用SubscribeEvent让事件总线自动发现要调用的方法
     @SubscribeEvent
