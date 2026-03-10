@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "emeraldeconomy:block/ee_atm_block"
+    },
+    "facing=east": {
+      "model": "emeraldeconomy:block/ee_atm_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "emeraldeconomy:block/ee_atm_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "emeraldeconomy:block/ee_atm_block",
+      "y": 270
     }
   }
 }
