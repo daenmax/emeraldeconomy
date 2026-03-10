@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rps",
+    "d#g",
+    "tcb"
+  ],
+  "key": {
+    "r": "minecraft:redstone",
+    "p": "minecraft:sticky_piston",
+    "s": "minecraft:hopper",
+    "d": "minecraft:observer",
+    "#": "minecraft:emerald",
+    "g": "minecraft:lever",
+    "t": "minecraft:repeater",
+    "c": "minecraft:chest",
+    "b": "minecraft:comparator"
+  },
+  "result": {
+    "id": "emeraldeconomy:ee_atm_block",
+    "count": 1
+  }
+}
